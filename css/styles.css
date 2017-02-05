@@ -1,0 +1,28 @@
+nav {
+  background: #FFB4B0; /* red */
+}
+
+ul#nav {
+  list-style-type: none;
+
+}
+
+ul#nav li {
+  display: inline;
+}
+
+.title {
+  color: #785616; /* dark yellow */
+}
+
+section, nav {
+  border: 2px solid black;
+}
+
+.col-md-3 {
+  background: #4DD7FA; /* blue */
+}
+
+.col-md-9 {
+  background: #FEFAC0; /* light yellow */
+}
