@@ -22,3 +22,12 @@ for (var i = 0; i < songs.length; i++){
 
 
 console.log("songs",songs);
+var outputEl = document.getElementById("output-target");
+
+
+for(var i = 0; i < songs.length; i++){
+  outputEl.innerHTML += ("<br>"+songs[i]);
+    }
+
+
+
