@@ -18,7 +18,13 @@ for (var i = 0; i < songs.length; i++){
   songs[i] = songs[i].replace(">", "-");
 }
 
+clickin on the Add music button you adding a view to put the
 
+addMusicLink.addEventListener("click", function(){
+viewList.classList.add("hidden");
+musicAdd.classList.add("visible");
+musicAdd.classList.remove("hidden");
+})
 
 
 console.log("songs",songs);
@@ -28,6 +34,7 @@ var outputEl = document.getElementById("output-target");
 for(var i = 0; i < songs.length; i++){
   outputEl.innerHTML += ("<br>"+songs[i]);
     }
+
 
 
 

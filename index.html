@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Music History</title>
@@ -12,13 +13,13 @@
     <header class="col-md-12 top">
         <nav class="main-section">
             <ul id="nav">
-                <li><a href="#">View Music |</a></li>
+                <li><a href="#">List Music |</a></li>
                 <li><a href="#">Add Music |</a></li>
-                <li><a href="#">Profile</a></li>
+                <!-- <li><a href="#">Profile</a></li> -->
             </ul>
         </nav>
     </header>
-    <section class="col-md-3 main">
+    <section class="col-md-2 main">
         <p>Song length:</p>
         <input type="range" min="0" max="10" value="0" step="1" />
         <p>Artist:</p>
@@ -41,7 +42,7 @@
         </div>
         <div>
             <p>Genre:</p>
-            <div class="leftgen col-md-3">
+            <div class="leftgen col-md-2">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="">Rock
@@ -58,7 +59,7 @@
                     </label>
                 </div>
             </div>
-            <div class="rightgen col-md-3">
+            <div class="rightgen col-md-2">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="">Classical
@@ -76,13 +77,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
          <footer class="filter">
             <a href="#" role="button">Filter</a>
             </footer>
         </div>
     </section>
-    <section id ="output-target" class="col-md-9 faves">
+    <section id ="output-target" class="col-md-8 faves">
         <h3 class="title">Tax Man</h3>
         <p class="specs">
             <aside>The Beatles | Revolver | Rock</aside>
@@ -100,6 +101,8 @@
             <aside>Rilo Kiley | More Adventurous | Folk</aside>
         </p>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="songs.js"></script>
 </body>
 

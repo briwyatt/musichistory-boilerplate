@@ -19,10 +19,35 @@ section, nav {
   border: 2px solid black;
 }
 
-.col-md-3 {
+.col-md-2 {
   background: #4DD7FA; /* blue */
 }
 
-.col-md-9 {
+.col-md-8 {
   background: #FEFAC0; /* light yellow */
+}
+
+.filter {
+  display: block;
+}
+
+
+ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+  background-color: goldenrod;
+  padding: 5px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-size: 2em;
 }
