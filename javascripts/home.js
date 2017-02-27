@@ -1,3 +1,19 @@
+var homeLink = document.getElementById("link-home");
+var homeView = document.getElementById("home-view");
+var listView = document.getElementById("link-home");
+listView.addEventListener("click", function() {
+  // homeView.classList.add("hidden");
+  addView.classList.add("hidden");
+
+listView.classList.add("visible");
+  homeView.classList.add("visible");
+  homeView.classList.remove("hidden");
+
+});
+
+
+
+
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -18,13 +34,8 @@ for (var i = 0; i < songs.length; i++){
   songs[i] = songs[i].replace(">", "-");
 }
 
-clickin on the Add music button you adding a view to put the
 
-addMusicLink.addEventListener("click", function(){
-viewList.classList.add("hidden");
-musicAdd.classList.add("visible");
-musicAdd.classList.remove("hidden");
-})
+
 
 
 console.log("songs",songs);

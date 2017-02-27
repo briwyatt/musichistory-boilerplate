@@ -1,45 +1,3 @@
-nav {
-  background: #FFB4B0; /* red */
-}
-
-ul#nav {
-  list-style-type: none;
-
-}
-
-ul#nav li {
-  display: inline;
-}
-
-.title {
-  color: #785616; /* dark yellow */
-}
-
-section, nav {
-  border: 2px solid black;
-}
-
-.col-md-2 {
-  background: #4DD7FA; /* blue */
-}
-
-.col-md-8 {
-  background: #FEFAC0; /* light yellow */
-}
-
-.filter {
-  display: block;
-}
-
-
-ul > li {
-  display: inline;
-  list-style-type: none;
-  margin: 5px 15px 0 15px;
-  background-color: goldenrod;
-  padding: 5px;
-}
-
 .visible {
   display: block;
 }
@@ -48,6 +6,61 @@ ul > li {
   display: none;
 }
 
+#centeredEl {
+  max-width: 40%;
+  margin: auto;
+}
+
 body {
-  font-size: 2em;
+  font-size: 1.5 em;
+}
+
+#nav-bar {
+  background: #FFB4B0; /* red */
+  padding: 5px;
+}
+
+#nav-bar > ul {
+  list-style-type: none;
+}
+
+ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+}
+
+.title {
+  color: #785616; /* dark yellow */
+}
+
+#nav-bar, #left-gen, #right-gen {
+  border: 2px solid black;
+  padding-left: 5px;
+}
+
+#left-gen {
+  background: #4DD7FA; /* blue */
+  float: left;
+  margin: auto;
+}
+
+#right-gen {
+  color: ;
+  /*float: right;*/
+  margin: auto;
+}
+
+.col-md-8 {
+  background: #FEFAC0; /* light yellow */
+}
+
+.filter {
+  display: block;
+  margin: 20% ;
+  padding: 10%; 
+}
+
+.checkbox {
+  display: block;
 }

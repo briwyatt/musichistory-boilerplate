@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Music History</title>
+  <meta charset="UTF-8">
+  <title>Music History Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-
-<body class="container-fluid">
-    <header class="col-md-12 top">
-        <nav class="main-section">
-            <ul id="nav">
-                <li><a href="#">List Music |</a></li>
-                <li><a href="#">Add Music |</a></li>
-                <!-- <li><a href="#">Profile</a></li> -->
-            </ul>
-        </nav>
-    </header>
-    <section class="col-md-2 main">
+<body>
+  <div id="nav-bar" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul>
+          <li><a href="#" id="view-music-link">View Music</a></li>
+          <li><a href="#" id="add-music-link">Add Music</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--BEGIN "#LIST-MUSIC-PAGE" -->
+  <div class="row">
+    <div id="list-music-page" class="container visible">
+      <div id="left-gen" class="col-md-3">
         <p>Song length:</p>
-        <input type="range" min="0" max="10" value="0" step="1" />
+          <input type="range" min="0" max="10" value="0" step="1" />
         <p>Artist:</p>
-        <select name="artist">
+          <select name="artist">
             <option value="The Beatles">The Beatles</option>
             <option value="Leon Bridges">Leon Bridges</option>
             <option value="Jay Z">Jay Z</option>
             <option value="Michael Jackson">Michael Jackson</option>
             <option value="Rilo Kiley">Rilo Kiley</option>
-        </select>
+          </select>
         <div class="album">
             <p>Album:</p>
             <select name="album" class="album">
@@ -42,7 +46,7 @@
         </div>
         <div>
             <p>Genre:</p>
-            <div class="leftgen col-md-2">
+            <div class="leftgen col-md-3">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="">Rock
@@ -59,7 +63,7 @@
                     </label>
                 </div>
             </div>
-            <div class="rightgen col-md-2">
+            <div class="rightgen col-md-3">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="">Classical
@@ -77,33 +81,58 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2">
-         <footer class="filter">
-            <a href="#" role="button">Filter</a>
-            </footer>
+        <div class="col-md-3">
+        <footer class="filter">
+          <a href="#" role="button">Filter</a>
+        </footer>
         </div>
-    </section>
-    <section id ="output-target" class="col-md-8 faves">
+      </div>
+      <div id="right-gen" class="col-md-9">
         <h3 class="title">Tax Man</h3>
-        <p class="specs">
+          <p class="specs">
             <aside>The Beatles | Revolver | Rock</aside>
-        </p>
+          </p>
         <h3 class="title">99 Problems</h3>
-        <p class="specs">
+          <p class="specs">
             <aside>Jay Z | The Black Album | Hip-hop</aside>
-        </p>
+          </p>
         <h3 class="title">Billie Jean</h3>
-        <p class="specs">
+          <p class="specs">
             <aside>Michael Jackson | Thriller | Rock</aside>
-        </p>
+          </p>
         <h3 class="title">Portions For Foxes</h3>
-        <p class="specs">
+          <p class="specs">
             <aside>Rilo Kiley | More Adventurous | Folk</aside>
-        </p>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="songs.js"></script>
+          </p>
+      </div>
+    </div>
+  </div>
+  <!--BEGIN "#ADD-MUSIC-PAGE"-->
+  <div id="centeredEl" class="hidden">
+    <div class="container">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-10">
+            <label class="control-label col-sm-2" for="text">Song name:</label>
+            <input type="text" class="form-control" id="songName">
+            <label class="control-label col-sm-2" for="text">Artist:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="artist">
+          </div>
+          <div class="col-sm-10">
+            <label class="control-label col-sm-2" for="text">Album:</label>
+            <input type="text" class="form-control" id=“album”>
+          </div>
+          </div>
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default" id="addButton">Add</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!--END "#ADD-MUSIC-PAGE"-->
+<script type="text/javascript" src="javascripts/list.js"></script>
+<script type="text/javascript" src="javascripts/add.js"></script>
 </body>
-
 </html>
